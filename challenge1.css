@@ -11,10 +11,11 @@ li{
 }
 a{
 	text-decoration: none;
+	color: none;
 }
 /*=======================================================*/
 
-header .navbar #navbarSupportedContent .bg-sky-blue,
+header .navbar #navbarNav .bg-sky-blue,
 #body-section #submit-btn,
 #body-section .form-check-input{
 	background-color: #00b0e5;
@@ -48,6 +49,9 @@ header #header-title #header-social-medias img{
 #body-section .form-check-input{
 	border: none;
 }
+#body-section .bg-check-input{
+	background-color: #eaf6fc;
+}
 #body-section #jobs-list .job{
 	border: 1px solid rgba(0, 0, 0, 0.1);
 }
@@ -58,6 +62,12 @@ header #header-title #header-social-medias img{
 #body-section #jobs-list .job img{
 	display: flex;
 	vertical-align: center;
+}
+#body-section #jobs-list .job .time-mode-1{
+	color: #90da5d;
+}
+#body-section #jobs-list .job .time-mode-2{
+	color: #3399cc;
 }
 /*=================================================================*/
 footer .footer-menu:hover, footer .list-elmt:hover{
