@@ -1,0 +1,65 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body{
+	background-color: #f4f4f4;
+}
+li{
+	list-style-type: none;
+}
+a{
+	text-decoration: none;
+}
+/*=======================================================*/
+
+header .navbar #navbarSupportedContent .bg-sky-blue,
+#body-section #submit-btn,
+#body-section .form-check-input{
+	background-color: #00b0e5;
+}
+
+header{
+	background: linear-gradient(RGBA(0, 0, 0, 0.6),RGBA(0, 0, 0, 0.6)), url('img/header/banner-1.jpg');
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	min-height: 450px
+}
+header .navbar #navbarSupportedContent #signIN:hover{
+	color: #00b0e5;
+}
+header #header-title #header-social-medias img{
+	width: 60px;
+}
+
+/*==============================================================*/
+
+#body-section{
+	width: 95%;
+	min-height: 800px;
+	bottom: 30px;
+	background-color: #fff;
+}
+#body-section .form-check-label{
+	color: #00b0e5;
+}
+#body-section .form-check-input{
+	border: none;
+}
+#body-section #jobs-list .job{
+	border: 1px solid rgba(0, 0, 0, 0.1);
+}
+#body-section #jobs-list .job:hover{
+	background-color: #fefed8;
+	box-shadow: 1px 1px 3px #333;
+}
+#body-section #jobs-list .job img{
+	display: flex;
+	vertical-align: center;
+}
+/*=================================================================*/
+footer .footer-menu:hover, footer .list-elmt:hover{
+	color: #00b0e5;
+}

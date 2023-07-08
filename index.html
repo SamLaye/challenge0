@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Il faut l'ajouter avant les autres fichiers CSS, afin que vos styles remplacent ceux de Bootstrap par défaut. -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	
+	<link rel="stylesheet" type="text/css" href="challenge1.css">
+	<title>Challenge 1</title>
+
+	<!-- Lien icone bootstrap -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+	<script src="https://kit.fontawesome.com/14273d579a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<header class="bg-primary">
+		<nav class="navbar navbar-expand-lg bg-body-tertiary mb-4">
+			<div class="container d-flex justify-content-between">
+				<div id="logo" class="">
+				    <a class="navbar-brand" href="#"><img src="img/header/aj-logo-light.svg" class="img-fluid"></a>
+				    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				      	<span class="navbar-toggler-icon">...</span>
+				    </button>
+			    </div>
+			    <div class="collapse d-flex me-3" id="navbarSupportedContent">
+			      	<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+				        <li class="nav-item">
+				          	<a href="#" class="nav-link text-white">Pricing</a>
+				        </li>
+				        <li class="nav-item">
+				          	<a href="#" class="nav-link text-white">Blog</a>
+				        </li>
+				        <li class="nav-item">
+				          	<a href="#" class="nav-link text-white">Contact</a>
+				        </li>
+				        <li class="nav-item">
+				          	<div class="d-flex justify-content-between text-white ms-4">
+						        <button class="btn btn-outline-light me-2" id="signIN" type="button">
+									Sign in
+						    	</button>
+						        <button class="btn btn-outline-success text-white ms-2 bg-sky-blue" type="submit">
+									Post a job
+						    	</button>
+						    </div>
+				        </li>
+			      	</ul>
+			    </div>
+			</div>
+		</nav>
+
+		<div id="header-title" class="d-flex flex-column justify-content-between text-center mt-4">
+			<h1 class="mx-auto mb-4 text-uppercaze text-white w-50">
+				The leading job board for designers, developers, and creative pros.
+			</h1>
+			<div class="d-flex flex-column mt-4">
+				<h3 class="text-uppercaze fs-6 text-muted">TRUSTED BY COMPANIES BIG AND SMALL AROUND THE GLOBE.</h3>
+				<ul id="header-social-medias" class="d-flex mx-auto justify-content-around w-75">
+					<li class=""><img src="img/header/apple.svg" class="" width="45" height="53"></li>
+					<li class=""><img src="img/header/twitter.svg" class="" width="45" height="53"></li>
+					<li class=""><img src="img/header/ea.svg" class="" width="45" height="53"></li>
+					<li class=""><img src="img/header/facebook-alt.svg" class="" width="45" height="53"></li>
+				</ul>	
+			</div>
+		</div>
+	</header>
+
+	<section id="body-section" class="rounded position-relative mx-auto py-4">
+		<div class="container">
+
+			<form class="d-flex justify-content-between">
+				<input type="text" class="form-control mx-2" placeholder="">
+				<input type="text" class="form-control mx-2" placeholder="location">
+				<input type="text" class="form-control mx-2" placeholder="Choose a category">
+				<input type="submit" id="submit-btn" class="form-control text-white mx-2" value="Search job">
+			</form>
+			<ul class="d-flex justify-content-between w-50 mt-4">
+				<li class="form-check mx-3 rounded-pill py-2 px-">
+					<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+					<label class="form-check-label" for="flexCheckDefault">
+					    Freelance
+					</label>
+				</li>
+				<li class="form-check mx-3 rounded-pill py-2 px-">
+					<input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+					<label class="form-check-label" for="flexCheckChecked">
+					    Full time
+					</label>
+				</li>
+				<li class="form-check mx-3 rounded-pill py-2 px-">
+					<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+					<label class="form-check-label" for="flexCheckDefault">
+					   	Internship
+					</label>
+				</li>
+				<li class="form-check mx-3 rounded-pill py-2 px-">
+					<input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+					<label class="form-check-label" for="flexCheckChecked">
+					    Part-time
+					</label>
+				</li>
+			</ul>
+
+			<div class="row">
+				<ul id="jobs-list">
+
+					<li class="job p-2 my-4 rounded">
+						<a href="#" class="d-flex justify-content-between">
+							<div class="d-flex">
+								<img src="img/body/1-JA_monogram-navy-blue-JPG-150x150.jpg" class="rounded-circle align-self-center" width="65" height="65">
+								<div class="d-flex flex-column">
+									<h2 class="text-capitalize fs-5">global visual communications manager</h2>
+									<p><span>jet Aviation</span> The artistry behind the art of flight</p>	
+								</div>
+							</div>
+							<div class="d-flex flex-column">
+								<p>Teterboro, NJ (3x week)</p>
+								<ul class="d-flex flex-column">
+									<li>Full-time</li>
+									<li><small class="text-muted fst-italic">Passed 6 hours ago</small></li>
+								</ul>
+							</div>
+						</a>
+					</li>
+					<li class="job p-2 my-4 rounded">
+						<a href="#" class="d-flex justify-content-between">
+							<div class="d-flex">
+								<img src="img/body/2-teaching-alt-logo-min-150x150.png" class="rounded-circle align-self-center" width="65" height="65">
+								<div class="d-flex flex-column">
+									<h2 class="text-capitalize fs-5">global visual communications manager</h2>
+									<p><span>jet Aviation</span> The artistry behind the art of flight</p>
+								</div>
+							</div>
+							<div class="d-flex flex-column">
+								<p>Anywhere <small>(Remote)</small></p>
+								<ul class="d-flex flex-column">
+									<li>Full-time</li>
+									<li><small class="text-muted fst-italic">Passed 6 hours ago</small></li>
+								</ul>
+							</div>
+						</a>
+					</li>
+					<li class="job p-2 my-4 rounded">
+						<a href="#" class="d-flex justify-content-between">
+							<div class="d-flex">
+								<img src="img/body/3-JA_monogram-navy-blue-JPG-150x150.jpg" class="rounded-circle align-self-center" width="65" height="65">
+								<div class="d-flex flex-column">
+									<h2 class="text-capitalize fs-5">global visual communications manager</h2>
+									<p><span>jet Aviation</span> The artistry behind the art of flight</p>	
+								</div>
+							</div>
+							<div class="d-flex flex-column">
+								<p>Teterboro, NJ (3x week)</p>
+								<ul class="d-flex flex-column">
+									<li>Full-time</li>
+									<li><small class="text-muted fst-italic">Passed 6 hours ago</small></li>
+								</ul>
+							</div>
+						</a>
+					</li>
+					<li class="job p-2 my-4 rounded">
+						<a href="#" class="d-flex justify-content-between">
+							<div class="d-flex">
+								<img src="img/body/2-teaching-alt-logo-min-150x150.png" class="rounded-circle align-self-center" width="65" height="65">
+								<div class="d-flex flex-column">
+									<h2 class="text-capitalize fs-5">global visual communications manager</h2>
+									<p><span>jet Aviation</span> The artistry behind the art of flight</p>
+								</div>
+							</div>
+							<div class="d-flex flex-column">
+								<p>Anywhere <small>(Remote)</small></p>
+								<ul class="d-flex flex-column">
+									<li>Full-time</li>
+									<li><small class="text-muted fst-italic">Passed 6 hours ago</small></li>
+								</ul>
+							</div>
+						</a>
+					</li>
+
+				</ul>
+			</div>
+			
+
+		</div>
+	</section>
+
+</body>
+<footer class="py-4">
+	<div class="container">
+		<div class="row justify-content-between">
+			<div class="col-md-3">
+				<img src="img/footer/aj-logo-black.svg" class="img-fluid">
+				<p class="text-muted">The leading job board for designers, developers, and creative pros.</p>
+				<p><small class="text-muted fst-italic">© 2023 Authentic Jobs, Inc. Since 2005.</small></p>
+			</div>
+			<div class="col-md-3">
+				<h3 class="text-capitalize fs-5 footer-menu">Post a Job</h3>
+				<ul class="d-flex flex-column">
+					<a href="#" class="text-muted list-elmt"><li class="">Pricing</li></a>
+					<a href="#" class="text-muted list-elmt"><li class="">Guarantee</li></a>
+					<a href="#" class="text-muted list-elmt"><li class="">Request an Invoice</li></a>
+					<a href="#" class="text-muted list-elmt"><li class="">Remote Work Tools</li></a>
+					<a href="#" class="text-muted list-elmt"><li class="">Hiring Guide</li></a>
+					<a href="#" class="text-muted list-elmt"><li class="">Salary Calculator</li></a>
+					<a href="#" class="text-muted list-elmt"><li class="">Sign In</li></a>
+				</ul>
+			</div>
+			<div class="col-md-3">
+				<h3 class="text-capitalize fs-5 footer-menu">Find a Job</h3>
+				<ul class="d-flex flex-column">
+					<a href="#" class="text-muted list-elmt"><li class="">Full-time Jobs</li></a>
+					<a href="#" class="text-muted list-elmt"><li class="">Freelance Jobs</li></a>
+					<a href="#" class="text-muted list-elmt"><li class="">Remote Jobs</li></a>
+					<a href="#" class="text-muted list-elmt"><li class="">RSS Feed</li></a>
+					<a href="#" class="text-muted list-elmt"><li class="">Resume Generator</li></a>
+				</ul>
+			</div>
+			<div class="col-md-3">
+				<h3 class="text-capitalize fs-5 footer-menu">About Us</h3>
+				<ul class="d-flex flex-column">
+					<a href="#" class="text-muted list-elmt"><li class="">Blog</li></a>
+					<a href="#" class="text-muted list-elmt"><li class="">Contact Us</li></a>
+					<a href="#" class="text-muted list-elmt"><li class="">FAQs</li></a>
+					<a href="#" class="text-muted list-elmt"><li class="">Privacy & Terms</li></a>
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer>
+</html>
